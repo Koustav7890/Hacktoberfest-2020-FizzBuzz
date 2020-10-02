@@ -1,0 +1,29 @@
+// Author: @Koustav7890
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+
+    int n;
+    cin>>n;
+
+
+    for(int i=1;i<n+1;i++){
+        
+        string s="";
+
+        if(i%3==0)
+            s+="FIZZ";
+        if(i%5==0)
+            s+="BUZZ";
+
+        if(i%3!=0 && i%5!=0)
+            cout<<i<<"\n";
+        else
+            cout<<s<<"\n";
+    }
+
+    return 0;
+}
